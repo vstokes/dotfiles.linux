@@ -15,7 +15,8 @@
     - [git submodule update --init --recursive, Installing submodules]
     - echo "hey, you guys"
     - sleep 2
-    -
-     command: ./test.sh
-     stdout: true
-     stderr: true
+    # Below is the proper spacing
+    # single bullet point for full command block.
+    # command: ./test.sh
+    # stdout: true
+    # stderr: true
