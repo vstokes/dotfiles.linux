@@ -5,11 +5,17 @@
 - clean: ['~']
 
 - link:
-   #     ~/.vim: vim
-     ~/.zshrc: zshrc
-
+    ~/.zshrc:
+    ~/.gitconfig:
+    ~/.vimrc:
 - create:
     - ~/Work
 
-      #- shell:
-      #  - [git submodule update --init --recursive, Installing submodules]
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+    - echo "hey, you guys"
+    - sleep 2
+    -
+     command: ./test.sh
+     stdout: true
+     stderr: true
